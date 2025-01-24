@@ -1,0 +1,251 @@
+#pool-calculator fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+#pool-calculator legend {
+    font-weight: bold;
+}
+/* Navigation bar */
+#steps-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#steps-navigation .step-nav-item {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: #ddd;
+    color: #555;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.5;
+    cursor: default;
+}
+
+#steps-navigation .step-nav-item.active {
+    background: #0073aa;
+    color: #fff;
+    opacity: 1;
+    font-weight: bold;
+}
+
+/* Step title and description */
+.step-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.step-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+.step-description {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Selections grid */
+.selections-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.selection-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: border-color 0.3s;
+}
+
+.selection-item input {
+    display: none; /* Hide the input */
+}
+
+.selection-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.selection-item input:checked + img {
+    border: 2px solid #0073aa;
+}
+
+.selection-item input:checked + .selection-title {
+    color: #0073aa;
+    font-weight: bold;
+}
+
+/* Result display */
+#pool-calculator-result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#final-cost {
+    font-size: 2rem;
+    color: #0073aa;
+    font-weight: bold;
+}
+
+/* Buttons */
+.navigation-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navigation-buttons button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+    background-color: #005177;
+}
+
+
+   /* Progress Bar */
+#progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#progress-bar-fill {
+    height: 100%;
+    background-color: #0073AA;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Step Header */
+.step-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.step-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+.step-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Selections in Grid Layout */
+.selections-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Selection Item Styling */
+.selection-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer; /* Makes the entire selection clickable */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.selection-item:hover {
+    border-color: #0073aa;
+    box-shadow: 0 2px 8px rgba(0, 115, 170, 0.2);
+}
+
+.selection-item input {
+    display: none; /* Hide the radio/checkbox input */
+}
+
+.selection-item input:checked + .selection-title,
+.selection-item input:checked ~ .selection-description {
+    color: #0073aa; /* Blue color for selected text */
+    font-weight: bold;
+}
+
+/* Change image border when selected */
+.selection-item input:checked ~ .selection-image {
+    border: 2px solid #0073aa;
+    border-radius: 5px;
+}
+
+.selection-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.selection-title {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.selection-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Final Cost Styling */
+#pool-calculator-result {
+    text-align: center; /* Center the content */
+    margin-top: 20px;
+}
+
+#final-cost {
+    font-size: 2rem; /* Larger font size for emphasis */
+    color: #0073aa; /* Match the navigation bar color */
+    font-weight: bold;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+    background-color: #005177;
+}
+
